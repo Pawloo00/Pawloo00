@@ -1,0 +1,32 @@
+RH,Report name,Report status,Report generated,Hierarchy,Timezone,,,,,
+RH,BALANCE_SUMMARY_REPORT,Success,16/02/22,ABCD121AXD,UTC,,,,,
+RS,Merchant account ID,Balance ,Currency,Available,Withheld,Total,,,,
+RS,ABCD121AXD,Opening,USD,100000,0,100000,,,,
+RS,ABCD121AXD,Closing,USD,181030.42,0,181030.42,,,,
+RS,ABCD121AXD,Opening,EUR,0,0,0,,,,
+RS,ABCD121AXD,Closing,EUR,8000,0,8000,,,,
+RS,ABCD121AXD,Opening,CAD,0,0,0,,,,
+RS,ABCD121AXD,Closing,CAD,-8000,0,-8000,,,,
+RS,ABCD121AXD,Opening,GBP,0,0,0,,,,
+RS,ABCD121AXD,Closing,GBP,0,0,0,,,,
+RD,Record type,Record subtype,Merchant account ID,Payment instrument type,Payment instrument subtype,Transaction count ,Record currency,Gross amount,Total fees net billed,Net amount
+RD,Sale,,ABCD121AXD,Credit card ,Visa,1,USD ,100000,-2000,98000
+RD,Sale,,ABCD121AXD,Local payment method,iDEAL,1,USD ,200000,-3000,197000
+RD,Sale,,ABCD121AXD,Apple Pay,Credit card-American Express,1,USD ,10000,-2000,8000
+RD,Sale,,ABCD121AXD,Venmo,Venmo wallet,1,USD ,10000,-2000,8000
+RD,Sale,,ABCD121AXD,PayPal,PayPal wallet,1,USD,51.65,-1.23,50.42
+RD,Refund,Referenced,ABCD121AXD,PayPal,PayPal wallet,1,USD ,-200000,0,-200000
+RD,Reversal,Payment reversal,ABCD121AXD,PayPal,PayPal wallet,1,USD ,-10000,0,-10000
+RD,Dispute,Chargeback,ABCD121AXD,,,1,USD ,-8000,0,-8000
+RD,Dispute,Chargeback reversal,ABCD121AXD,,,1,USD ,8000,0,8000
+RD,Fees,Chargeback fees,ABCD121AXD,,,1,USD ,-20,0,-20
+RD,Holds ,Account hold ,ABCD121AXD,,,1,USD ,-8000,0,-8000
+RD,Hold release,Account hold release,ABCD121AXD,,,1,USD ,8000,0,8000
+RD,Withdrawal,,ABCD121AXD,,,1,USD ,-100000,0,-100000
+RD,Currency conversion,Conversion from,ABCD121AXD,,,1,GBP,-90000,0,-90000
+RD,Currency conversion,Conversion to,ABCD121AXD,,,1,USD ,80000,0,80000
+RD,Sale,,ABCD121AXD,PayPal,PayPal wallet,1,GBP,100000,-10000,90000
+RD,Sale,,ABCD121AXD,PayPal,PayPal wallet,1,EUR,10000,-2000,8000
+RD,Refund,Referenced,ABCD121AXD,PayPal,PayPal wallet,1,CAD,-8000,0,-8000
+RF,File number,Total records,Total files,,,,,,,
+RF,1,18,1,,,,,,,
